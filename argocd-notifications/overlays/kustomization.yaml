@@ -6,6 +6,7 @@ bases:
 
 resources:
   - notification-cm.yaml
+  - notification-secret.yaml
   
 patchesStrategicMerge:
   - service-cm.yaml
@@ -13,9 +14,3 @@ patchesStrategicMerge:
   - template-cm.yaml
   - trigger-cm.yaml
 
-patchesJson6902:
-  - target:
-      kind: Secret
-      name: argocd-notifications-secret
-      version: v1
-    path: patch-slack-secret.yaml
