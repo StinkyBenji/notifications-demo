@@ -23,7 +23,7 @@ spec:
         - name: AVP_TYPE
           value: vault
         - name: VAULT_ADDR
-          value: 'http://vault-server.vault.srv.cluster.local:8200'
+          value: 'http://vault-server.vault.svc.cluster.local:8200'
         - name: AVP_AUTH_TYPE
           value: k8s
 
