@@ -15,16 +15,16 @@ spec:
     path: argocd-notifications/overlays
     repoURL: https://github.com/StinkyBenji/notifications-demo
     targetRevision: master
-  plugin:
-    name: argocd-vault-plugin
-    env:
-      - name: AVP_K8S_ROLE
-        value: vplugin
-      - name: AVP_TYPE
-        value: vault
-      - name: AVP_VAULT_ADDR
-        value: 'http://vault-server.vault.srv.cluster.local:8200'
-      - name: AVP_AUTH_TYPE
-        value: k8s
+    plugin:
+      name: argocd-vault-plugin
+      env:
+        - name: AVP_K8S_ROLE
+          value: vplugin
+        - name: AVP_TYPE
+          value: vault
+        - name: AVP_VAULT_ADDR
+          value: 'http://vault-server.vault.srv.cluster.local:8200'
+        - name: AVP_AUTH_TYPE
+          value: k8s
 
   
