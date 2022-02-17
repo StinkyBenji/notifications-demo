@@ -22,7 +22,7 @@ spec:
           value: vplugin
         - name: AVP_TYPE
           value: vault
-        - name: AVP_VAULT_ADDR
+        - name: VAULT_ADDR
           value: 'http://vault-server.vault.srv.cluster.local:8200'
         - name: AVP_AUTH_TYPE
           value: k8s
