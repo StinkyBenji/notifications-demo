@@ -5,12 +5,11 @@ bases:
   - ../base
 
 resources:
-  - notification-cm.yaml
   - notification-secret.yaml
   
-patchesStrategicMerge:
-  - service-cm.yaml
-  - subscription-cm.yaml
-  - template-cm.yaml
-  - trigger-cm.yaml
-
+patchesJson6902:
+  - target:
+      kind: ConfigMap
+      name: argocd-notifications-cm
+      version: v1
+    path: patch-notification-cm.yaml
