@@ -7,4 +7,6 @@ resources:
   - notification-sa.yaml
   - notification-rbac.yaml
   - notification-deployment.yaml
+  - notification-secret.yaml
+  - notification-cm.yaml
 

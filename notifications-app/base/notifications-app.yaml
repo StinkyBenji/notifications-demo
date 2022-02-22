@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: argocd-01-config
   source:
-    path: argocd-notifications/overlays
+    path: argocd-notifications/base
     repoURL: https://github.com/StinkyBenji/notifications-demo
     targetRevision: master
     plugin:
