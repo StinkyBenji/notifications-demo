@@ -226,19 +226,19 @@ data:
       - app-sync-succeeded
       when: app.status.operationState.phase in ['Succeeded']
 
-  subscriptions:
+  subscriptions: |
     # subscription for on-sync-status-unknown trigger notifications
     - recipients:
       - slack:jarvis-test
       triggers:
       - on-sync-status-unknown
-    
+
     # subscription for on-sync-status-unknown trigger notifications
     - recipients:
       - slack:jarvis-test
       triggers:
       - on-sync-failed
-    
+
     # subscription for on-health-degraded trigger notifications
     - recipients:
       - slack:jarvis-test
