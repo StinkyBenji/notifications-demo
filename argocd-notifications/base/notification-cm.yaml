@@ -233,7 +233,7 @@ data:
       triggers:
       - on-sync-status-unknown
 
-    # subscription for on-sync-status-unknown trigger notifications
+    # subscription for on-sync-failed trigger notifications
     - recipients:
       - slack:jarvis-test
       triggers:
@@ -243,8 +243,8 @@ data:
     - recipients:
       - slack:jarvis-test
       triggers:
-      - on-health-
-      - 
+      - on-health-degraded
+    
     # subscription for on-deployed trigger notifications
     - recipients:
       - slack:jarvis-test
