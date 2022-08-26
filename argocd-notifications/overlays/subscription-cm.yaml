@@ -21,8 +21,8 @@ data:
     - recipients:
       - slack:jarvis-test
       triggers:
-      - on-health-
-      - 
+      - on-health-degraded
+      
     # subscription for on-deployed trigger notifications
     - recipients:
       - slack:jarvis-test
